@@ -1,5 +1,10 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  
+  h1 Welcome to our Github API
+  p This are our Endpoins
+  ul
+    li'/users/List'
+    li'/users/page/:number'
+    li'/users/detail/:username'
+    li'/users/detail/:username/repos'

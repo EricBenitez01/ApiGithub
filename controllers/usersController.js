@@ -6,10 +6,6 @@ console.log(data); */
 const API = "https://api.github.com/";
 /* link: <https://api.github.com/repositories/1300192/issues?page=4>; rel="next", */
 module.exports={
-    
-     show: function(req, res, next) {
-        res.send('users');
-      },
      List:  /* /api/users?since={number} */
           async (req, res) => {
           const respuesta = await fetch(`${API}users?since=0`);
